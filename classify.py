@@ -9,8 +9,8 @@ import cv2
 def ClassifyImage(input_image):
     # Set the right path to your model definition file, pretrained model weights,
     # and the image you would like to classify.
-    MODEL_FILE = 'caffee/lenetdeployDigitsLetters.prototxt'
-    PRETRAINED = 'caffee/trainedModelsLetters/_iter_3650_allV6.caffemodel'      #_iter_3650_allV6.caffemodel
+    MODEL_FILE = 'caffe/lenetdeployDigitsLetters.prototxt'
+    PRETRAINED = 'caffe/trainedModelsLetters/_iter_3650_allV6.caffemodel'      #_iter_3650_allV6.caffemodel
     # load the model
     caffe.set_mode_cpu()
     #caffe.set_device(0)
