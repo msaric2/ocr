@@ -11,9 +11,6 @@ def ClassifyImage(input_image):
     # and the image you would like to classify.
     MODEL_FILE = 'caffee/lenetdeployDigitsLetters.prototxt'
     PRETRAINED = 'caffee/trainedModelsLetters/_iter_3650_allV6.caffemodel'      #_iter_3650_allV6.caffemodel
-
-    #im = caffe.io.load_image(filename)
-
     # load the model
     caffe.set_mode_cpu()
     #caffe.set_device(0)
