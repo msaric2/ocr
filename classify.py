@@ -25,8 +25,7 @@ def ClassifyImage(input_image):
     blob.ParseFromString(data)
     arr = np.array(caffe.io.blobproto_to_array(blob))
     mean_file = arr[0]
-    #np.save(sys.argv[2], out)
-    #
+
 
     # data = np.array(blob.data)
     #mean_file = np.array( caffe.io.blobproto_to_array(blob) )
