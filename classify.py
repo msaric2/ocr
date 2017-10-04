@@ -61,7 +61,7 @@ def ClassifyImage(input_image):
     return labels[output_prob.argmax()]
    # print 'output label:', labels[output_prob.argmax()]
    # print net.blobs['data'].data[...].mean()
-   # print input_image.mean().mean()
+
 
     #print 'predicted class is:', output_prob.argmax()
 
