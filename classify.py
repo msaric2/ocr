@@ -72,10 +72,6 @@ for i in range(1,23,1):
     labelWord=""
     for j in range(3):
         filename="singleChars/char"+str(i)+"_"+str(j)+".tif"
-
-        # img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-        # cv2.equalizeHist(img,img)
-        #cv2.imwrite(filename, img)
         input_image = caffe.io.load_image(filename)
         label=ClassifyImage(input_image)
         labelWord=labelWord+label
