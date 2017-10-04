@@ -15,7 +15,6 @@ def ClassifyImage(input_image):
     caffe.set_mode_cpu()
     #caffe.set_device(0)
     net = caffe.Net(MODEL_FILE, PRETRAINED,caffe.TEST)
-
     print "successfully loaded classifier"
 
     #convert binaryproto to npy
