@@ -60,7 +60,7 @@ def ClassifyImage(input_image):
     labels = np.loadtxt('labelsDigitsLetters.txt', str, delimiter='\t')
     return labels[output_prob.argmax()]
    # print 'output label:', labels[output_prob.argmax()]
-   # print net.blobs['data'].data[...].mean()
+
 
 
     #print 'predicted class is:', output_prob.argmax()
