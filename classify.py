@@ -59,11 +59,6 @@ def ClassifyImage(input_image):
     output_prob = output['prob'][0]
     labels = np.loadtxt('labelsDigitsLetters.txt', str, delimiter='\t')
     return labels[output_prob.argmax()]
-   # print 'output label:', labels[output_prob.argmax()]
-
-
-
-    #print 'predicted class is:', output_prob.argmax()
 
 
 
